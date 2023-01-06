@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainDiv">
+        <div><p class="par">Voornaam:</p> <input id="veld1" class="textBox" type="text"></div>
+        <div><p class="par">Achternaam:</p><input id="veld2" class="textBox" type="text"></div>
+        <div><p class="par">Geboortedatum:</p><input id="veld3" class="textBox" type="date"></div>
+        <div><p class="par">Adres:</p><input id="veld4" class="textBox" type="text"></div><br>
+        <input id="knop" type="button" value="Submit" onclick=functie1();><br>
+    </div>
+</body>
+</html>
+
+<style>
+    div {
+        color: darkgreen;
+        font-family: monospace;
+        max-width: 300px;
+        margin: auto;
+    }
+    #mainDiv {
+        border: 1px solid black;
+        background-color: #add8e6;
+        text-align: center;
+    }
+    #knop {
+        background-color: lightsalmon;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textBox {
+        border: 2px solid lightblue; 
+    }
+</style>
+
+<script>
+    function functie1() {
+        let var1 = document.getElementById("veld1").value;
+        let var2 = document.getElementById("veld2").value;
+        let var3 = document.getElementById("veld3").value;
+        let var4 = document.getElementById("veld4").value;
+        let alertVar = var1 + "\n" + var2 + "\n" + var3 + "\n" + var4; 
+        alert(alertVar);
+        
+        //document.getElementById("id1").innerHTML = var1 + "<br>" + var2 + "<br>" + var3 + "<br>" + var4;
+    }
+</script>
